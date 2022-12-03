@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <button class="add-btn">Click To Add Details</button>
+    <button class="clear-all">Clear All Data</button>
+    <div class="s-b">
+        <input type="text" name="" id="search-bar" placeholder="SEARCH YOUR PANCARD NUMBER">
+    </div>
+    <select name="" id="sort">
+        <option value="sort">Sort</option>
+        <option value="ascending">A-Z</option>
+        <option value="descending">Z-A</option>
+    </select>
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-close">x</div>
+            <form action="">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    <input type="hidden" id="saveindex">
+                </div>
+                <div class="form-control">
+                    <label for="pan">Pan Number</label>
+                    <input type="text" name="pan" id="pan" required>
+                </div>
+                <div class="form-control">
+                    <label for="age">Age</label>
+                    <input type="text" name="age" id="age" required>
+                </div>
+                <div class="form-control">
+                    <label for="qualification">Highest Qualification</label>
+                    <input type="text" name="qualification" id="qualification" required>
+                </div>
+                <button id="submit-btn" type="submit">Add Details</button>
+                <button class="save-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <table id="table">
+
+        <tr>
+            <th>SL No</th>
+            <th class="name">Name</th>
+            <th class="pan">PAN Number</th>
+            <th class="age">Age</th>
+            <th class="qualification">Highest Qualification</th>
+            <th class="action">Action</th>
+        </tr>
+
+        <tbody id="main-data">
+
+        </tbody>
+    </table>
+</body>
+
+</html>
