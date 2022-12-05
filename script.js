@@ -138,10 +138,7 @@ submitBtn.addEventListener("click", function (e) {
         alert("input fields cannot be empty");
 
     }
-
-
     closeModal()
-
     showData()
     reset()
 
