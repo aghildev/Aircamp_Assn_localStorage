@@ -1,4 +1,4 @@
-window.addEventListener("load", (event) => {
+window.addEventListener("load", () => {
     showData()
   });
 
@@ -110,6 +110,7 @@ submitBtn.addEventListener("click", function (e) {
     e.preventDefault()
 
     //getting value from input fields
+
     let nameVal = name.value;
     let panNumVal = panNum.value;
     let ageVal = age.value;
@@ -166,7 +167,7 @@ function editData(index) {
 
     showModal()
 
-    //making the value in inputfield equals of clicked one
+    //making the value in inputfield as to equals to clicked one
 
     name.value = dataArr[index].personName;
     panNum.value = dataArr[index].personPan;
